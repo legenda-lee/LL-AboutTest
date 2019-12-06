@@ -1,5 +1,8 @@
 package com.legenda.lee.studytest.aboutMap;
 
+import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,39 +17,34 @@ public class Test1 {
 
         Map<String, String> yktFeaturesMapOfIdCard = new HashMap<>();
         yktFeaturesMapOfIdCard.put("name", "Legenda-Lee");
-        yktFeaturesMapOfIdCard.put("age", "100");
-        yktFeaturesMapOfIdCard.put("phone", "110");
+        yktFeaturesMapOfIdCard.put("age", "0");
+        yktFeaturesMapOfIdCard.put("dd", "china");
 
         Map<String, String> yktFeaturesMapOfPhone = new HashMap<>();
-        yktFeaturesMapOfPhone.put("age", "1000");
+        yktFeaturesMapOfPhone.put("age", "1");
         yktFeaturesMapOfPhone.put("sex", "male");
-        yktFeaturesMapOfPhone.put("address", "China");
+        yktFeaturesMapOfPhone.put("address", "china");
 
-        // 结果合并
+
         Map<String, String> yktFeaturesMap = new HashMap<>();
-        for (Map.Entry<String, String> IdCardEntry : yktFeaturesMapOfIdCard.entrySet()) {
+
+        if (!CollectionUtils.isEmpty(yktFeaturesMapOfPhone)) {
             for (Map.Entry<String, String> phoneEntry : yktFeaturesMapOfPhone.entrySet()) {
-                if (IdCardEntry.getKey().equals(phoneEntry.getKey())) {
-                    if (Integer.valueOf(IdCardEntry.getValue()) > Integer.valueOf(phoneEntry.getValue())) {
-                        yktFeaturesMap.put(IdCardEntry.getKey(), IdCardEntry.getValue());
-                    } else {
-                        yktFeaturesMap.put(phoneEntry.getKey(), phoneEntry.getValue());
+                if (!StringUtils.isEmpty(yktFeaturesMapOfIdCard.get(phoneEntry.getKey()))) {
+                    if (Integer.valueOf(yktFeaturesMapOfIdCard.get(phoneEntry.getKey())) < Integer.valueOf(phoneEntry.getValue())) {
+                        yktFeaturesMapOfIdCard.put(phoneEntry.getKey(), phoneEntry.getValue());
                     }
                 } else {
-                    yktFeaturesMap.put(IdCardEntry.getKey(), IdCardEntry.getValue());
+                    yktFeaturesMapOfIdCard.put(phoneEntry.getKey(), phoneEntry.getValue());
                 }
             }
         }
 
-        for (Map.Entry<String, String> phoneEntry : yktFeaturesMapOfPhone.entrySet()) {
-            for (Map.Entry<String, String> IdCardEntry : yktFeaturesMapOfIdCard.entrySet()) {
-                if (phoneEntry.getKey().equals(IdCardEntry.getKey())) {
-                    continue;
-                } else {
-                    yktFeaturesMap.put(phoneEntry.getKey(), phoneEntry.getValue());
-                }
-            }
-        }
+        yktFeaturesMap.putAll(yktFeaturesMapOfIdCard);
+
+        System.out.println(yktFeaturesMap);
+
+        yktFeaturesMapOfIdCard = null;
 
         System.out.println(yktFeaturesMap);
     }
