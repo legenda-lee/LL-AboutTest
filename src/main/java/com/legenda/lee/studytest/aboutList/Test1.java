@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author Legenda-Lee
  * @date 2019-12-06 17:11
- * @description
+ * @description jdk1.8 遍历List的方法
  * @since 1.0.0
  */
 public class Test1 {
