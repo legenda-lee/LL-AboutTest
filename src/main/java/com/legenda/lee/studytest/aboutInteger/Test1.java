@@ -16,5 +16,13 @@ public class Test1 {
         System.out.println(Integer.valueOf(b));
         System.out.println(Integer.valueOf(c));
 
+        String d = "0403.png";
+        String e = "附房间打开.png";
+        System.out.println(d.length());
+        System.out.println(e.length());
+
+        String fileNameWithNoType = e.substring(0, e.lastIndexOf("."));
+        System.out.println(fileNameWithNoType);
+
     }
 }
