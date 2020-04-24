@@ -18,6 +18,10 @@ public class Test3 {
         System.out.println("repayment_type".hashCode());
 
 
+        String a = "330682198202150016|18137646932";
+        System.out.println(a.split("\\|")[0]);
+        System.out.println(a.split("\\|")[1]);
+
 
 
 
