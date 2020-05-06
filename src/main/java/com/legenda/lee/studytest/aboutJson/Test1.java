@@ -1,5 +1,6 @@
 package com.legenda.lee.studytest.aboutJson;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
@@ -89,6 +90,24 @@ public class Test1 {
         System.out.println(object3.get("name"));
         System.out.println(object3.get("name1"));
         System.out.println(object3.get("name2"));
+
+
+        //14.json字符串转即送对象
+        JSONObject object4 = JSONObject.parseObject("{\"from\":\"zh\",\"to\":\"en\",\"trans_result\":[{\"src\":\"\\u5475\\u5475\",\"dst\":\"Ha-ha\"}]}\n");
+        System.out.println(object4.get("from"));
+        System.out.println(object4.get("to"));
+        System.out.println(object4.get("trans_result"));
+        JSONArray objects = JSON.parseArray(object4.get("trans_result").toString());
+        for(int i=0;i<objects.size();i++){
+            //通过数组下标取到object，使用强转转为JSONObject，之后进行操作
+            JSONObject object = (JSONObject) objects.get(i);
+            System.out.println(object.getString("dst"));
+        }
+
+
+
+
+
 
     }
 }
