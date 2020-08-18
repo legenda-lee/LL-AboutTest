@@ -14,6 +14,7 @@ public class StudyInstant {
         Instant instant = Instant.now();
         // 获取秒
         long currentSecond = instant.getEpochSecond();
+        System.out.println(currentSecond);
         // 获取毫秒
         long currentMilli = instant.toEpochMilli();
         System.out.println(currentMilli);
