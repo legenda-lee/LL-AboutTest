@@ -11,7 +11,7 @@
     <groupId>com.legenda.lee</groupId>
     <artifactId>study-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>study-test</name>
+    <name>LL-AboutStudy</name>
     <description>Demo project for Test</description>
 
     <properties>
