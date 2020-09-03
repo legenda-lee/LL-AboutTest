@@ -25,5 +25,8 @@ public class Test1 {
 
         System.out.println("====");
         System.out.println(ProjectKnowledgePackageFlowEnum.valueOf("P0001_K0001_F0002"));
+
+
+        System.out.println(ProjectKnowledgePackageFlowEnum.P0001_K0001_F0001.getFlowId());
     }
 }
