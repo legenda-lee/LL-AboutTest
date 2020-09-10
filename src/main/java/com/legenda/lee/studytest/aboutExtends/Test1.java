@@ -45,8 +45,8 @@ public class Test1 {
         }
 
 
-        // Map<String, Object> result = BeanUtil.beanToMap(drugCompositionConflictContext);
-        // System.out.println(result);
+        Map<String, Object> result = BeanUtil.beanToMap(drugCompositionConflictContext);
+        System.out.println(result);
         Map<String, Object> result1 = BeanUtil.beanToMap(ruleEngineContext1);
         System.out.println(result1);
         //
