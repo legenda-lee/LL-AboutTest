@@ -1,6 +1,7 @@
 package com.legenda.lee.studytest.aboutExtends.another1;
 
 import lombok.Data;
+import lombok.ToString;
 
 import java.util.Set;
 
@@ -12,6 +13,7 @@ import java.util.Set;
  *
  */
 @Data
+@ToString(callSuper = true)
 public class DrugCompositionConflictRequest extends BaseRequestParam {
 
 
