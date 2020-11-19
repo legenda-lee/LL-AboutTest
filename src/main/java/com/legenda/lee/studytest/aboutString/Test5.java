@@ -13,5 +13,10 @@ public class Test5 {
         if (Boolean.parseBoolean(demo)) {
             System.out.println("hello");
         }
+
+        String filename = "2019-吉林大学-招生目录.pdf";
+        System.out.println(filename.substring(0, filename.length() - 4));
+        System.out.println(filename.substring(0, filename.length() - 4).replaceAll("-", ""));
+
     }
 }
