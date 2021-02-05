@@ -11,5 +11,7 @@ public class TestSub {
         String a = "汇总数据-";
 
         System.out.println(a.substring(0, a.length() - 1));
+
+        System.out.println(1 << 1);
     }
 }
