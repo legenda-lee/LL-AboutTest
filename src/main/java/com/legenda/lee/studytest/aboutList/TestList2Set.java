@@ -25,5 +25,12 @@ public class TestList2Set {
         for (Object item : set) {
             System.out.println(item);
         }
+
+        Set<Long> resourceIdSet = new HashSet();
+        resourceIdSet.add(3L);
+        resourceIdSet.add(4L);
+        List<Long> resourceIdList = new ArrayList<>(resourceIdSet);
+
+        System.out.println(resourceIdSet.size());
     }
 }
