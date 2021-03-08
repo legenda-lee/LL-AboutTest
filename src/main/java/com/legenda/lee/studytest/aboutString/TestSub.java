@@ -13,5 +13,8 @@ public class TestSub {
         System.out.println(a.substring(0, a.length() - 1));
 
         System.out.println(1 << 1);
+
+
+        System.out.println("yyyyMMddHHmmssSSS".substring(10));
     }
 }
