@@ -1,28 +1,26 @@
 package com.legenda.lee.studytest.aboutList;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Set;
 
 /**
  * @author: Legenda-Lee(lee.legenda@gmail.com)
- * @date: 2020-07-23 15:30
+ * @date: 2020-10-28 1:51 下午
  * @description:
  */
 public class Test3 {
 
     public static void main(String[] args) {
-        List<String> nameList = new ArrayList<>();
-        nameList.add("ee");
-        // nameList.add("ww");
+        List<Long> whiteDoctorValue = new ArrayList<>();
+        whiteDoctorValue.add(3L);
+        whiteDoctorValue.add(3L);
+        whiteDoctorValue.add(4L);
 
-        String x = "";
-        for (String s : nameList) {
-            x = x.concat(s).concat("，");
-        }
-        x = x.substring(0, x.length() - 1);
+        Set<Long> set = new HashSet<>(whiteDoctorValue);
+        System.out.println(set.size());
 
-        System.out.println(x);
 
     }
 }
