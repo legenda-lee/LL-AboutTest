@@ -19,5 +19,13 @@ public class TestSub {
 
         String aa = "1000200329DZSYAB";
         System.out.println(aa.substring(0, 5) + "*****"+ aa.substring(10, 16));
+
+
+        String fieldCode = "2357433";
+        System.out.println(fieldCode.substring(2, 3));
+        if ("5".equals(fieldCode.substring(2, 3))) {
+            System.out.println("yes");
+        }
+
     }
 }
