@@ -25,5 +25,10 @@ public class Test4 {
         doseDoubleList.add(3.2);
 
         System.out.println(doseDoubleList.size());
+
+        doseDoubleList.remove(3.2);
+
+        System.out.println(doseDoubleList.size());
+
     }
 }

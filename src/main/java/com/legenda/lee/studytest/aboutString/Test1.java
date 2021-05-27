@@ -18,5 +18,9 @@ public class Test1 {
         System.out.println(a);
         System.out.println(b);
         System.out.println(b.length());
+
+
+        String aaa = String.valueOf(null).concat("/").concat(String.valueOf(32));
+        System.out.println(aaa);
     }
 }
