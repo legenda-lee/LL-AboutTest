@@ -18,5 +18,6 @@ public class Test5 {
         System.out.println(filename.substring(0, filename.length() - 4));
         System.out.println(filename.substring(0, filename.length() - 4).replaceAll("-", ""));
 
+        System.out.println(filename.contains("招生目录.."));
     }
 }
