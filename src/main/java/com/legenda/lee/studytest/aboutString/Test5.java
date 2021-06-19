@@ -19,5 +19,6 @@ public class Test5 {
         System.out.println(filename.substring(0, filename.length() - 4).replaceAll("-", ""));
 
         System.out.println(filename.contains("招生目录.."));
+        System.out.println(filename.contains("2019-吉林大学-招生目录.pdf"));
     }
 }
