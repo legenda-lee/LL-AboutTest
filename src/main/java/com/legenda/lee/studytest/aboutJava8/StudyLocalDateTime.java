@@ -24,7 +24,7 @@ public class StudyLocalDateTime {
         // 获取当前日期时间
         LocalDateTime localDateTime = LocalDateTime.now();
         // 设置日期
-        LocalDateTime localDateTime1 = LocalDateTime.of(2019, Month.SEPTEMBER, 10, 14, 46, 56);
+        LocalDateTime localDateTime1 = LocalDateTime.of(2019, 7, 1, 0, 0, 0);
         LocalDateTime localDateTime2 = LocalDateTime.of(localDate, localTime);
         LocalDateTime localDateTime3 = localDate.atTime(localTime);
         LocalDateTime localDateTime4 = localTime.atDate(localDate);
