@@ -1,6 +1,6 @@
 package com.legenda.lee.studytest.aboutString;
 
-import org.springframework.util.CollectionUtils;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -39,29 +39,59 @@ public class Test7 {
         System.out.println(haha);
 
 
-        List<MajorAnalysisCompareVoVersion2> hehe = new ArrayList<>();
+        List<Major> hehe = new ArrayList<>();
 
 
-        MajorAnalysisCompareVoVersion2 major1 = new MajorAnalysisCompareVoVersion2();
+        Major major4 = new Major();
+        major4.setHardScore(99);
+        major4.setHardScoreShow("无");
+
+        Major major1 = new Major();
         major1.setHardScore(33);
         major1.setHardScoreShow("33");
 
-        MajorAnalysisCompareVoVersion2 major2 = new MajorAnalysisCompareVoVersion2();
+        Major major2 = new Major();
         major2.setHardScore(44);
         major2.setHardScoreShow("44");
 
 
-        MajorAnalysisCompareVoVersion2 major3 = new MajorAnalysisCompareVoVersion2();
+        Major major3 = new Major();
         major3.setHardScore(88);
         major3.setHardScoreShow("无");
 
+        hehe.add(major4);
         hehe.add(major1);
         hehe.add(major2);
         hehe.add(major3);
 
-        Collections.sort(hehe);
+        // Collections.sort(hehe);
+
+        // System.out.println(hehe);
+
+
 
         System.out.println(hehe);
+
+        for (int i = 0; i < hehe.size(); i++) {
+            for (int j = 0; j < hehe.size() - i - 1; j++) {
+                Major temp;
+                if ((!StringUtils.isEmpty(hehe.get(j).getHardScoreShow()) &&
+                        hehe.get(j).getHardScoreShow().equals("无"))
+                        || (!StringUtils.isEmpty(hehe.get(j).getHardScoreShow()) &&
+                        !hehe.get(j + 1).getHardScoreShow().equals("无") &&
+                        hehe.get(j).getHardScore() < hehe.get(j + 1).getHardScore())) {
+                    temp = hehe.get(j);
+                    hehe.set(j, hehe.get(j + 1));
+                    hehe.set((j+1), temp);
+
+                    System.out.println(hehe);
+
+                }
+            }
+        }
+
+        System.out.println(hehe);
+
 
 
     }
