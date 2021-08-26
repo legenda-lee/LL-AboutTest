@@ -11,12 +11,14 @@ import org.springframework.util.StringUtils;
 public class Test8 {
 
     public static void main(String[] args) {
-        String lo = "116.395645";
-        String la = "116.395645";
+        String lo = "1.395645";
+        String la = "116.434";
 
 
         String haha = StrUtil.sub(lo, lo.indexOf("."), lo.length());
         System.out.println(haha);
+        System.out.println(haha.length());
+
 
         String hehe = StrUtil.sub(lo, 0, lo.length() - 1);
         System.out.println(hehe);
@@ -25,7 +27,13 @@ public class Test8 {
         System.out.println(heihei);
 
 
-        System.out.println("hhha".concat(null).concat("eeeee"));
+
+        String patientName = "3？!355";
+        System.out.println(patientName.length());
+        String first = patientName.substring(0, 3);
+        String second = patientName.substring(3, 6);
+        System.out.println(first);
+        System.out.println(second);
 
     }
 }

@@ -32,5 +32,12 @@ public class StudyLocalDateTime {
         LocalDate localDate2 = localDateTime.toLocalDate();
         // 获取LocalTime
         LocalTime localTime2 = localDateTime.toLocalTime();
+
+
+
+        LocalDateTime aa = LocalDateTime.now();
+        LocalDateTime yesterday = aa.minusDays(1);
+        LocalDateTime hhhh = LocalDateTime.of(yesterday.getYear(), yesterday.getMonth(), yesterday.getDayOfMonth(), 23, 59, 59);
+        System.out.println(hhhh.toString().replace("T", " "));
     }
 }
