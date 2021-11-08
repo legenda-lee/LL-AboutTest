@@ -33,5 +33,12 @@ public class Test2 {
         System.out.println(endTime);
 
 
+        String aa = "mg/粒";
+        String[] split = aa.split("\\/");
+
+        System.out.println(aa.length());
+
+
+
     }
 }

@@ -1,27 +1,19 @@
-package com.legenda.lee.aboutUtils;
-
-import org.springframework.util.StringUtils;
+package com.legenda.lee.studytest.aboutString;
 
 /**
  * @author: Legenda-Lee(lee.legenda@gmail.com)
- * @date: 2021-09-29 10:35 上午
+ * @date: 2021-10-16 4:01 下午
  * @description:
  */
-public class IsNumUtil {
+public class Test10 {
 
-    /**
-     * 是否为数字（正负整数、正负小数）
-     *
-     * @param str
-     * @return
-     */
-    public static boolean isNum(String str) {
-        if (StringUtils.isEmpty(str)) {
-            return false;
-        }
-        return str.matches("^[-+]?(([0-9]+)([.]([0-9]+))?|([.]([0-9]+))?)$");
+    public static void main(String[] args) {
+        System.out.println(isInteger("-333"));
+        System.out.println(isInteger("03432.3"));
+        System.out.println("333".length());
+        System.out.println("z沟沟壑壑".length());
+
     }
-
 
     /**
      * &#64;Description 判断字符串是否实际上是整数
@@ -43,5 +35,4 @@ public class IsNumUtil {
 
         return true;
     }
-
 }

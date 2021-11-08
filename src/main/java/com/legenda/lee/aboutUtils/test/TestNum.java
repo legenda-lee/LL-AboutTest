@@ -1,6 +1,7 @@
 package com.legenda.lee.aboutUtils.test;
 
 import com.legenda.lee.aboutUtils.IsNumUtil;
+import com.legenda.lee.aboutUtils.ZhengZeUtil;
 
 /**
  * @author: Legenda-Lee(lee.legenda@gmail.com)
@@ -11,9 +12,16 @@ public class TestNum {
 
     public static void main(String[] args) {
         String a = "333";
-        String b = "333.4a3";
-
+        String b = "333.43";
+        String c= "0";
+        //
         System.out.println(IsNumUtil.isNum(a));
         System.out.println(IsNumUtil.isNum(b));
+        System.out.println(IsNumUtil.isInteger(b));
+        System.out.println(IsNumUtil.isInteger(c));
+
+        String majorCode = "020232";
+        // System.out.println(ZhengZeUtil.isNumOrWord(majorCode));
+
     }
 }
