@@ -27,5 +27,13 @@ public class TestSub {
             System.out.println("yes");
         }
 
+
+        String a = "PRESCRIPTION-EVENT-0001-SNAPSHOT";
+        System.out.println(a.substring(0, a.indexOf("SNAPSHOT") - 1));
+        System.out.println(a.substring(0, 5));
+
+
+
+
     }
 }
