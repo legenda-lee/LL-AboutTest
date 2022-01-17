@@ -33,6 +33,9 @@ public class TestSub {
         System.out.println(a.substring(0, 5));
 
 
+        String aaa = "无,";
+        System.out.println(aaa.substring(0, aaa.length() - 1));
+
 
 
     }

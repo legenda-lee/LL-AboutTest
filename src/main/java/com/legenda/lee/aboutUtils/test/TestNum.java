@@ -12,7 +12,7 @@ public class TestNum {
 
     public static void main(String[] args) {
         String a = "333";
-        String b = "333.43";
+        String b = "333. 43";
         String c= "0";
         //
         System.out.println(IsNumUtil.isNum(a));
