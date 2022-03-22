@@ -1,5 +1,8 @@
 package com.legenda.lee.studytest.aboutString;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author: Legenda-Lee(lee.legenda@gmail.com)
  * @date: 2021-01-29 11:26 上午
@@ -35,6 +38,15 @@ public class TestSub {
 
         String aaa = "无,";
         System.out.println(aaa.substring(0, aaa.length() - 1));
+
+
+        String name = "100041110402484";
+        String newStudentNo = name.substring(0, 5) + "*" + name.substring(12, name.length());
+        System.out.println(newStudentNo);
+
+
+        List<String> temp1 = new ArrayList<>();
+        temp1.addAll(null);
 
 
 

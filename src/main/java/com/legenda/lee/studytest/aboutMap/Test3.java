@@ -17,5 +17,11 @@ public class Test3 {
         yktFeaturesMapOfIdCard.put("dd", "china");
 
         System.out.println(yktFeaturesMapOfIdCard.get("3333"));
+        System.out.println(yktFeaturesMapOfIdCard.get("dd"));
+
+        System.out.println(yktFeaturesMapOfIdCard.put("dd", "hhhh"));
+        System.out.println(yktFeaturesMapOfIdCard.put("3333", "hhhh"));
+        System.out.println(yktFeaturesMapOfIdCard.get("dd"));
+
     }
 }
