@@ -1,5 +1,8 @@
 package com.legenda.lee.studytest.aboutMap;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,6 +25,23 @@ public class Test3 {
         System.out.println(yktFeaturesMapOfIdCard.put("dd", "hhhh"));
         System.out.println(yktFeaturesMapOfIdCard.put("3333", "hhhh"));
         System.out.println(yktFeaturesMapOfIdCard.get("dd"));
+
+        yktFeaturesMapOfIdCard.put("lida", null);
+        yktFeaturesMapOfIdCard.put("lily", null);
+
+        System.out.println(JSON.toJSONString(yktFeaturesMapOfIdCard, SerializerFeature.WriteMapNullValue));
+
+
+        // String a = "***************";
+        // String schoolCode = a.substring(0, 5);
+        //
+        // System.out.println(a);
+        // System.out.println(schoolCode);
+        // System.out.println(schoolCode.contains("*"));
+
+
+
+
 
     }
 }
