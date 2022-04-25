@@ -1,8 +1,7 @@
 package com.legenda.lee.studytest.aboutString;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author: Legenda-Lee(lee.legenda@gmail.com)
@@ -75,6 +74,23 @@ public class TestSub {
         System.out.println(d1);
         System.out.println(left.compareTo(d1));
 
+
+        Set<Integer> fileDateList = new HashSet<>();
+        fileDateList.add(2020);
+        fileDateList.add(2022);
+
+        // 最近两年
+        Integer maxFileDate = Collections.max(fileDateList);
+        fileDateList.remove(maxFileDate);
+        Integer maxFileDateSecond = Collections.max(fileDateList);
+
+        System.out.println(maxFileDate);
+        System.out.println(maxFileDateSecond);
+
+
+        double aaaa = 7.0d;
+        double bbbb = 0.2d;
+        System.out.println(Math.ceil(aaaa * bbbb));
 
     }
 }
