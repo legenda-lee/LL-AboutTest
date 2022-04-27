@@ -39,5 +39,23 @@ public class StudyLocalDateTime {
         LocalDateTime yesterday = aa.minusDays(1);
         LocalDateTime hhhh = LocalDateTime.of(yesterday.getYear(), yesterday.getMonth(), yesterday.getDayOfMonth(), 23, 59, 59);
         System.out.println(hhhh.toString().replace("T", " "));
+
+
+        LocalDate now = LocalDateTime.now().toLocalDate();
+        LocalDate hha = LocalDateTime.of(2022, 4, 24, 21, 36, 0).toLocalDate();
+
+        LocalDate calculateResult = hha.plusDays(4);
+
+        System.out.println(now);
+        System.out.println(hha);
+        System.out.println(calculateResult);
+
+
+        System.out.println(calculateResult.isAfter(now));
+
+        System.out.println(calculateResult.toEpochDay());
+        System.out.println(now.toEpochDay());
+
+
     }
 }
