@@ -20,8 +20,11 @@ public class TestNum {
         System.out.println(IsNumUtil.isInteger(b));
         System.out.println(IsNumUtil.isInteger(c));
 
-        String majorCode = "020232";
+        String majorCode = "020Z32";
         // System.out.println(ZhengZeUtil.isNumOrWord(majorCode));
+        System.out.println(IsNumUtil.isNum(majorCode));
+        System.out.println(IsNumUtil.isInteger(majorCode));
+
 
     }
 }

@@ -1,5 +1,8 @@
 package com.legenda.lee.studytest.aboutDate;
 
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.util.StrUtil;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -36,6 +39,9 @@ public class Test1 {
 
         System.out.println(jobEndTime);
         System.out.println(sysTime.before(jobEndTime));
+
+
+        System.out.println(Integer.valueOf(StrUtil.replace(DateUtil.today(), "-", "")));
     }
 
 }
