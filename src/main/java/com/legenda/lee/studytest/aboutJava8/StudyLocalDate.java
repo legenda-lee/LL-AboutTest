@@ -3,6 +3,7 @@ package com.legenda.lee.studytest.aboutJava8;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 
 /**
@@ -37,6 +38,13 @@ public class StudyLocalDate {
         int dayOfWeek1 = localDate.get(ChronoField.DAY_OF_WEEK); //结果：2
         System.out.println(dayOfWeek);
         System.out.println(dayOfWeek1);
+
+
+        System.out.println("--------------------------------");
+
+        LocalDate yesterday = LocalDate.now().plusDays(-1);
+
+        System.out.println("Scheduled_allMajorAnalysis" + yesterday.format(DateTimeFormatter.ISO_DATE));
 
     }
 }

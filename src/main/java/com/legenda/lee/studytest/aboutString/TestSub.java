@@ -76,7 +76,7 @@ public class TestSub {
 
 
         Set<Integer> fileDateList = new HashSet<>();
-        fileDateList.add(2020);
+        // fileDateList.add(2020);
         fileDateList.add(2022);
 
         // 最近两年
@@ -88,9 +88,11 @@ public class TestSub {
         System.out.println(maxFileDateSecond);
 
 
-        double aaaa = 7.0d;
-        double bbbb = 0.2d;
-        System.out.println(Math.ceil(aaaa * bbbb));
+        // double aaaa = 7.0d;
+        // double bbbb = 0.2d;
+        // System.out.println(Math.ceil(aaaa * bbbb));
+
+
 
     }
 }
