@@ -1,6 +1,7 @@
 package com.legenda.lee.studytest.aboutSystem;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -22,5 +23,15 @@ public class Property {
         hh.add(null);
         hh.add(null);
         System.out.println(hh.size());
+
+        String a = "303,";
+        List<String> mathLoveList1 = Arrays.asList(a.split(","));
+
+        System.out.println(mathLoveList1.size());
+
+        System.out.println(mathLoveList1.get(0));
+        System.out.println(mathLoveList1.get(1));
+
+
     }
 }
