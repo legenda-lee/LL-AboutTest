@@ -19,5 +19,7 @@ public class TestSub2 {
         Integer a = medicineDTO.getUsageFrequencyCode() + 3;
         System.out.println(medicineDTO.getUsageFrequencyCode() + 3);
 
+        System.out.println("哈哈哈哈");
+
     }
 }
