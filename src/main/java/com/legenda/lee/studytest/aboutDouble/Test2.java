@@ -19,5 +19,11 @@ public class Test2 {
         String yyyyMMdd = LocalDate.now().format(dateTimeFormatter);
 
         System.out.println(yyyyMMdd);
+
+
+        double a = 12.5d;
+        Integer b= 33;
+        System.out.println(a + 20);
+        System.out.println(b > a + 20);
     }
 }
