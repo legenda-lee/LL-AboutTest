@@ -24,11 +24,13 @@ public class Test1 {
 
         // 过滤
         List<Long> haha = whiteDoctorValue.stream().filter(i -> i > 3).collect(Collectors.toList());
+        List<Long> hahaha = whiteDoctorValue.stream().filter(i -> i > 3).filter(i -> i == 5).collect(Collectors.toList());
 
         // 过滤又去重
         List<Long> hehe = whiteDoctorValue.stream().filter(i -> i > 3).distinct().collect(Collectors.toList());
 
         System.out.println(JSON.toJSONString(haha));
+        System.out.println(JSON.toJSONString(hahaha));
         System.out.println(JSON.toJSONString(hehe));
         System.out.println(JSON.toJSONString(whiteDoctorValue));
     }

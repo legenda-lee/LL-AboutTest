@@ -23,7 +23,9 @@ public class Test1 {
         whiteDoctorValue.add(6L);
 
         System.out.println(whiteDoctorValue.stream().count());
-
+        double a = (double)25/2;
+        System.out.println(25/2);
+        System.out.println(a);
 
     }
 
