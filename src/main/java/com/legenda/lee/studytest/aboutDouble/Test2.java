@@ -1,5 +1,6 @@
 package com.legenda.lee.studytest.aboutDouble;
 
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -21,9 +22,21 @@ public class Test2 {
         System.out.println(yyyyMMdd);
 
 
-        double a = 12.5d;
+        Double a = 12.5d;
         Integer b= 33;
         System.out.println(a + 20);
         System.out.println(b > a + 20);
+        System.out.println("hhh");
+        System.out.println(Double.valueOf(a.intValue()));
+        System.out.println(a.doubleValue());
+
+
+        double percent = 0.87d;
+        NumberFormat nt = NumberFormat.getPercentInstance();
+        //设置百分数精确度2即保留两位小数
+        nt.setMinimumFractionDigits(2);
+        System.out.println(nt.format(percent));
+
+        System.out.println(Double.valueOf(nt.format(percent).substring(0, nt.format(percent).length() - 1)));
     }
 }
