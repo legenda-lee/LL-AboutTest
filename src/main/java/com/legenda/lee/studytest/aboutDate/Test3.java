@@ -19,5 +19,7 @@ public class Test3 {
         System.out.println(startTime);
 
         System.out.println(Objects.equals("100.00%","100.00%"));
+
+        System.out.println("100.00%".length());
     }
 }
