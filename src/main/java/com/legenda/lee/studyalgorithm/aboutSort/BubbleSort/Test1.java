@@ -15,8 +15,8 @@ public class Test1 {
 
         Test1 t = new Test1();
 
-        // t.bubbleSort(nums);
-        t.insertSort(nums);
+        t.bubbleSort(nums);
+        // t.insertSort(nums);
 
 
         System.out.println(JSON.toJSONString(nums));
