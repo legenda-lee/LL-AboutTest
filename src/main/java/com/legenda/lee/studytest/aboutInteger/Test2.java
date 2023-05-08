@@ -11,5 +11,12 @@ public class Test2 {
         Integer a = 7;
         int b = 3;
         System.out.println(a % b);
+
+
+        Integer score1 = 3;
+        Integer score2 = 9;
+        int i = (int) (score1 * 0.7d + score2 * 0.3d);
+        System.out.println(i);
+
     }
 }
