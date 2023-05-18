@@ -11,5 +11,11 @@ public class Test2 {
         Integer a = 7;
         int b = 3;
         System.out.println(a % b);
+
+
+        String url = "jdbc:mysql://192.168.10.101:3306/szzd_risk?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&serverTimezone=Asia/Shanghai&useSSL=false";
+        String[] slipt = url.split("/");
+        String[] slipt1 = url.split("/", 4);
+        System.out.println("a");
     }
 }
