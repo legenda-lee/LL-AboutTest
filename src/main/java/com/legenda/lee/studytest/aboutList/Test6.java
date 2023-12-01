@@ -27,6 +27,9 @@ public class Test6 {
         drugNames.add("阿片");
         drugNames.add("鸦片");
 
+        System.out.println(drugNames);
+
+
         if (!CollectionUtils.isEmpty(drugNames) && drugNames.size() >= 2) {
             for (int i = 0; i < drugNames.size(); i++) {
                 for (int j = i + 1; j < drugNames.size(); j++) {

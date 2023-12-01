@@ -1,6 +1,5 @@
 package com.legenda.lee.studyalgorithm.aboutSort.BubbleSort;
 
-import com.alibaba.fastjson.JSON;
 
 /**
  * @author: Legenda-Lee(lee.legenda@gmail.com)
@@ -19,7 +18,7 @@ public class Test1 {
         // t.insertSort(nums);
 
 
-        System.out.println(JSON.toJSONString(nums));
+        // System.out.println(JSON.toJSONString(nums));
 
     }
     
