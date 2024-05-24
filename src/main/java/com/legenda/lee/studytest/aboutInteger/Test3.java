@@ -1,6 +1,5 @@
 package com.legenda.lee.studytest.aboutInteger;
 
-import javax.validation.constraints.Min;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;

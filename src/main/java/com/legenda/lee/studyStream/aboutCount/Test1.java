@@ -14,18 +14,18 @@ import java.util.stream.Collectors;
 public class Test1 {
 
     public static void main(String[] args) {
-        List<Long> whiteDoctorValue = new ArrayList<>();
-        whiteDoctorValue.add(3L);
-        whiteDoctorValue.add(3L);
-        whiteDoctorValue.add(4L);
-        whiteDoctorValue.add(4L);
-        whiteDoctorValue.add(4L);
-        whiteDoctorValue.add(6L);
-
-        System.out.println(whiteDoctorValue.stream().count());
-        double a = (double)25/2;
-        System.out.println(25/2);
-        System.out.println(a);
+        // List<Long> whiteDoctorValue = new ArrayList<>();
+        // whiteDoctorValue.add(3L);
+        // whiteDoctorValue.add(3L);
+        // whiteDoctorValue.add(4L);
+        // whiteDoctorValue.add(4L);
+        // whiteDoctorValue.add(4L);
+        // whiteDoctorValue.add(6L);
+        //
+        // System.out.println(whiteDoctorValue.stream().count());
+        // double a = (double)25/2;
+        // System.out.println(25/2);
+        // System.out.println(a);
 
     }
 

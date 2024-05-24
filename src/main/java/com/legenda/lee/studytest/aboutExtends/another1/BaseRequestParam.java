@@ -2,7 +2,6 @@ package com.legenda.lee.studytest.aboutExtends.another1;
 
 
 import lombok.Data;
-import org.hibernate.validator.constraints.NotBlank;
 
 import java.io.Serializable;
 import java.util.HashMap;

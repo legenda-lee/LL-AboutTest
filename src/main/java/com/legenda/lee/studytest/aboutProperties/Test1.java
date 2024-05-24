@@ -8,7 +8,5 @@ package com.legenda.lee.studytest.aboutProperties;
  */
 public class Test1 {
     public static void main(String[] args) {
-        String sourceBasePath = PropertyUtil.getProperty("sourceBasePath");
-        System.out.println(sourceBasePath);
     }
 }
