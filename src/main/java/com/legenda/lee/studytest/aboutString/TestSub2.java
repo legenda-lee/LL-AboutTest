@@ -26,5 +26,9 @@ public class TestSub2 {
         System.out.println(schoolName);
 
 
+        String luQuFenShuBianHuaQuShiMessage = String.format("[%s]年考研大概率为竞争小年。", "2024");
+        System.out.println(luQuFenShuBianHuaQuShiMessage);
+
+
     }
 }
